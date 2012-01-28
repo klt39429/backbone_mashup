@@ -42,7 +42,7 @@
       </div><!-- /topbar-inner -->
     </div>
     
-    <div class="content">
+    <div class="content_div">
     <div id="main"></div>
 	</div>
     
