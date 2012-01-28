@@ -1,0 +1,20 @@
+#profile_image {
+	height:40px;
+	width:40px;
+}
+
+.deal_image {
+    width:120px;
+}
+
+.content {
+    top: 50px;
+    text-align: center;
+    position: relative;
+    width: 1250px;
+}
+
+#main {
+  
+  left: 30px;
+}

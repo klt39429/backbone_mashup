@@ -1,0 +1,27 @@
+[
+    {
+		        "title": "Amazon",
+				        "description": "20% off on all Amazon orders",
+						        "detail" : "Get 20% off on all Amazon order - restrictions may apply",
+								        "image": "images/amazon.jpeg"
+										    },
+											    {
+													        "title": "Ginsen Sushi",
+															        "description": "15% off on Mango Rolls",
+																	        "detail" : "Lots of sushi and stuff",
+																			        "image": "images/ginsen.jpeg"
+																					    },
+																						    {
+																								        "title": "Big 5",
+																										        "description": "15% off on hoodies",
+																												        "detail" : "Sport equiments are cool",
+																														        "image": "images/big5.jpeg"
+																																    },  
+																																	    {
+																																			        "title": "Target",
+																																					        "description": "50% off all store",
+																																							        "detail" : "50% off all in-store purchase equipment",
+																																									        "image": "images/target.jpeg"
+																																											    }   
+																																												    
+																																													]
