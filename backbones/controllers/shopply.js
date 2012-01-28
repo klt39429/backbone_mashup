@@ -1,7 +1,7 @@
 var ShopplyController = Backbone.Controller.extend({
 	
 	_browse: null,
-	_deals: null,
+	_navigation_user: null,
 	
 	routes: {
 		"": "browse",
@@ -10,14 +10,19 @@ var ShopplyController = Backbone.Controller.extend({
 
     initialize: function(options) {
 	    var ws = this;    	
+	    
+	    // render navigtaion user tab
+	    ws._navigation_user = new UserNavigationView({model: new User()});
+	    ws._navigation_user.render();
+	    
 	    if (this._browse === null){
 	        $.ajax({
 	            url: 'data/sample.json1',
 	            dataType: 'json',
 	            data: {},
 	            success: function(data) {
-	                ws._deals = new DealCollection(data);
-	                ws._browse = new BrowseView({collection: ws._deals}); 
+	                ws._browse = new BrowseView({collection: new DealCollection(data)});
+	                ws._browse.render();
 	                Backbone.history.loadUrl();
 	            },
 	            error: function(data,e) {
@@ -32,7 +37,7 @@ var ShopplyController = Backbone.Controller.extend({
 	},
 	
     browse: function() {
-        this._browse.render();
+    	//this._browse.render();
     },	
     
     test: function() {

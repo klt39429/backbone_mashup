@@ -7,13 +7,12 @@ var BrowseView = Backbone.View.extend({
         var bv = this;
         this.el.fadeOut('fast', function() {
             bv.el.empty();
-            
+//console.log(bv.collection);            
             bv.collection.each(function(item) {
             	var biv = new BrowseItemView({model: item})
             	biv.render();
             	bv.el.append(biv.el);
             });
-        	
         	
             bv.el.fadeIn('fast');
         });

@@ -36,9 +36,7 @@
             <li><a href="#">My Deals</a></li>
             <li><a href="#">Search</a></li>
           </ul>
-          <ul class="nav secondary-nav">
-            <li><img id="profile_image" src="images/profile.jpeg" /></li>
-          	<li><a href="#">Yo, Shrek!</a></li>
+          <ul id="user_navigation" class="nav secondary-nav">
           </ul>
         </div>
       </div><!-- /topbar-inner -->

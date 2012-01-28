@@ -3,6 +3,6 @@ var User = Backbone.Model.extend({
 		id: 0,
 		name: "Shrek",
 		image: 'images/profile.jpeg',
-		deals: []
+		deals: new DealCollection()
 	}	
 });
