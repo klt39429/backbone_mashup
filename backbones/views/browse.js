@@ -3,15 +3,24 @@ var BrowseView = Backbone.View.extend({
 	el: $('#main'),
     browse_template: $("#browse_template").template(),
     
+    initialize: function() {
+    	this.filter = new Filter();
+    	//this.filter.bind("change",this.render);
+    	
+    	_.bindAll(this,'render');
+    },
+    
     render: function() {
         var bv = this;
-        this.el.fadeOut('fast', function() {
+        bv.el.fadeOut('fast', function() {
             bv.el.empty();
-//console.log(bv.collection);            
             bv.collection.each(function(item) {
-            	var biv = new BrowseItemView({model: item})
-            	biv.render();
-            	bv.el.append(biv.el);
+            	// if item tags match filter / search criteria, then display
+            	if ( (0 == bv.filter.get("tags").length) || (0 != _.intersection(bv.filter.get("tags"), item.get("tags")).length) ) {
+            		var biv = new BrowseItemView({model: item})
+            		biv.render();
+            		bv.el.append(biv.el);
+            	}
             });
         	
             bv.el.fadeIn('fast');
@@ -32,7 +41,7 @@ var BrowseItemView = Backbone.View.extend({
     },
     
     initialize: function() {
-    	_(this).bindAll('hide_add', 'show_add', 'add_item');
+    	_.bindAll(this, 'render', 'hide_add', 'show_add', 'add_item');
     },
     
     render: function() {
@@ -51,10 +60,10 @@ var BrowseItemView = Backbone.View.extend({
     },
     
     add_item: function(e) {
-    	console.log(this.div_id);
-    	var item = $("#" + this.div_id );
-    	item.remove();
-    	//this.model.destroy();
+		var user_deals = shopply._navigation_user.model.get("deals");
+		if (-1 == _.indexOf(user_deals.toArray(),this.model)) {
+			user_deals.add(this.model);
+		}
     }
     
 });

@@ -4,84 +4,96 @@
         "title": "Amazon",
         "description": "20% off on all Amazon orders",
         "detail" : "Get 20% off on all Amazon order - restrictions may apply",
-        "image": "images/amazon.jpeg"
+        "image": "images/amazon.jpeg",
+        "tags" ["amazon", "20%", "order", "online", "store", "clothes", "equipment"]
     },
     {
         "id": 2,
         "title": "Ginsen Sushi",
         "description": "15% off on Mango Rolls",
         "detail" : "Lots of sushi and stuff",
-        "image": "images/ginsen.jpeg"
+        "image": "images/ginsen.jpeg",
+        "tags" ["ginsen", "15%", "sushi", "restaurant", "food"]
     },
     {
         "id": 3,
         "title": "Big 5",
         "description": "15% off on hoodies",
         "detail" : "Sport equiments are cool",
-        "image": "images/big5.jpeg"
+        "image": "images/big5.jpeg",
+        "tags" ["big 5", "15%", "sport", "equipment"]
     },  
     {
         "id": 4,
         "title": "Target",
         "description": "50% off all store",
         "detail" : "50% off all in-store purchase equipment",
-        "image": "images/target.jpeg"
+        "image": "images/target.jpeg",
+        "tags" ["target", "50%", "clothes", "equipment", "online", "store"]
     },
     {
         "id": 5,
         "title": "Amazon",
         "description": "20% off on all Amazon orders",
         "detail" : "Get 20% off on all Amazon order - restrictions may apply",
-        "image": "images/amazon.jpeg"
+        "image": "images/amazon.jpeg",
+        "tags" ["amazon", "20%", "order", "online", "store", "clothes"]
     },
     {
         "id": 6,
         "title": "Ginsen Sushi",
         "description": "15% off on Mango Rolls",
         "detail" : "Lots of sushi and stuff",
-        "image": "images/ginsen.jpeg"
+        "image": "images/ginsen.jpeg",
+        "tags" ["ginsen", "15%", "sushi", "restaurant", "food"]
     },
     {
         "id": 7,
         "title": "Big 5",
         "description": "15% off on hoodies",
         "detail" : "Sport equiments are cool",
-        "image": "images/big5.jpeg"
+        "image": "images/big5.jpeg",
+        "tags" ["big 5", "15%", "sport", "equipment"]
     },  
     {
         "id": 8,
         "title": "Target",
         "description": "50% off all store",
         "detail" : "50% off all in-store purchase equipment",
-        "image": "images/target.jpeg"
+        "image": "images/target.jpeg",
+        "tags" ["target", "50%", "clothes", "equipment", "online", "store"]
     },
     {
         "id": 9,
         "title": "Amazon",
         "description": "20% off on all Amazon orders",
         "detail" : "Get 20% off on all Amazon order - restrictions may apply",
-        "image": "images/amazon.jpeg"
+        "image": "images/amazon.jpeg",
+        "tags" ["amazon", "20%", "order", "online", "store", "clothes"]
     },
     {
         "id": 10,
         "title": "Ginsen Sushi",
         "description": "15% off on Mango Rolls",
         "detail" : "Lots of sushi and stuff",
-        "image": "images/ginsen.jpeg"
+        "image": "images/ginsen.jpeg",
+        "tags" ["ginsen", "15%", "sushi", "restaurant", "food"]
     },
     {
         "id": 11,
         "title": "Big 5",
         "description": "15% off on hoodies",
         "detail" : "Sport equiments are cool",
-        "image": "images/big5.jpeg"
+        "image": "images/big5.jpeg",
+        "tags" ["big 5", "15%", "sport", "equipment"]
     },  
     {
         "id": 12,
         "title": "Target",
         "description": "50% off all store",
         "detail" : "50% off all in-store purchase equipment",
-        "image": "images/target.jpeg"
+        "image": "images/target.jpeg",
+        "tags" ["target", "50%", "clothes", "equipment", "online", "store"]
     }
     
 ]
