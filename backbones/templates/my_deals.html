@@ -1,0 +1,30 @@
+<script id="my_deals_table_template" type="text/x-jquery-tmpl">
+
+    <table class="zebra-striped">
+
+    <thead>
+        <tr>
+            <th style="width: 100px" class="blue header"> Image </th>
+            <th style="width: 15%" class="red header"> Title </th>
+            <th style="width: 20%" class="yellow header"> Description </th>
+            <th style="" class="green header"> Details </th>
+        </tr>
+    </thead>
+        
+    <tbody>
+    </tbody>
+
+    </table>
+
+
+</script>
+
+<script id="my_deals_row_template" type="text/x-jquery-tmpl">
+        <tr class="my_deal_row">
+            <td> <img class="my_deal_image" src="${attributes.image}" /> </td>
+            <td> ${attributes.title} </td>
+            <td> ${attributes.description} </td>
+            <td> ${attributes.detail} </td>
+        </tr>
+
+</script>
